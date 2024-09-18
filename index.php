@@ -37,13 +37,31 @@ class Food extends Product {
     }   
 }
 
+// definisco la classe toy
+class Toy extends Product {
+    public $material;
+    public $size;
+    // definisco il costruttore della classe toy
+    public function __construct($_title, $_price, $_category, $_material, $_size) {
+        // richiamo il costtruttore della classe Product
+        parent::__construct($_title, $_price, $_category);
+        $this->material = $_material;
+        $this->size = $_size;
+    }
+
+}
+
+
 // creo le istanze 
 
 $categoryAnimals = new Animals ("Dog");
 $typeOfFood = new Food ("Cibo per Cani", 20, $categoryAnimals, "Manzo");
+$dogToy = new Toy ("Giocattolo per cani,", 15, $categoryAnimals, "Plastica", "Grande");
 
 var_dump($categoryAnimals);
 var_dump($typeOfFood);
+var_dump($dogToy);
+
 
 
 ?>
