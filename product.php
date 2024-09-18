@@ -13,6 +13,8 @@ class Product {
         $this->category = $_category;
 
     }
+
+    
 }
 
 ?>

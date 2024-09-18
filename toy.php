@@ -10,6 +10,7 @@ class Toy extends Product {
         $this->material = $_material;
         $this->size = $_size;
     }
+    
 
 }
 

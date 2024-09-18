@@ -8,6 +8,8 @@ class Food extends Product {
         // richiamo il costruttore del genitore Product
         parent::__construct($_title, $_price, $_category);
         $this ->flavor = $_flavor;
-    }   
+    } 
+    
+    
 }
 ?>

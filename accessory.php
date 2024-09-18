@@ -10,5 +10,6 @@ class Accessory extends Product {
         $this->color = $_color;
 
     }
+    
 }
 ?>
