@@ -10,6 +10,8 @@ class Animals {
 }
 
 
+// -------------------------------------------------------------------------------------
+
 // definisco la classe per i prodotti 
 class Product {
     public $title;
@@ -25,6 +27,8 @@ class Product {
     }
 }
 
+// ---------------------------------------------------------------------------------------------
+
 // Ereditarietà che estende la classe prodotto
 class Food extends Product {
     public $flavor;
@@ -36,6 +40,8 @@ class Food extends Product {
         $this ->flavor = $_flavor;
     }   
 }
+
+// ------------------------------------------------------------------------------------------------
 
 // definisco la classe toy
 class Toy extends Product {
@@ -51,16 +57,36 @@ class Toy extends Product {
 
 }
 
+// ------------------------------------------------------------------------------------------------------
+
+// definisco la classe accessory
+
+class Accessory extends Product {
+    public $color;
+    // costruttore della classe acessory
+    public function __construct($_title, $_price, $_category, $_color) {
+        // richiamo il costruttore di product
+        parent::__construct($_title, $_price, $_category);
+        $this->color = $_color;
+
+    }
+}
+
 
 // creo le istanze 
 
 $categoryAnimals = new Animals ("Dog");
 $typeOfFood = new Food ("Cibo per Cani", 20, $categoryAnimals, "Manzo");
 $dogToy = new Toy ("Giocattolo per cani,", 15, $categoryAnimals, "Plastica", "Grande");
+$dogAccessory = new Accessory("Collare per Cani", 25, $categoryAnimals, "Rosso");
+
+
 
 var_dump($categoryAnimals);
 var_dump($typeOfFood);
 var_dump($dogToy);
+var_dump($dogAccessory);
+
 
 
 
