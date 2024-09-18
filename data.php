@@ -16,30 +16,38 @@ $categoryAnimals_cat = new Animals ("Cat");
 
 
 
-$typeOfFood = new Food ("Cibo per Cani", 20, $categoryAnimals_dog, "Manzo");
-$dogToy = new Toy ("Giocattolo per cani,", 15, $categoryAnimals_cat, "Plastica", "Grande");
-$dogAccessory = new Accessory("Collare per Cani", 25, $categoryAnimals_dog, "Rosso");
+// $typeOfFood = new Food ("Cibo per Cani", 20, $categoryAnimals_dog, "Manzo");
+// $dogToy = new Toy ("Giocattolo per cani,", 15, $categoryAnimals_cat, "Plastica", "Grande");
+// $dogAccessory = new Accessory("Collare per Cani", 25, $categoryAnimals_dog, "Rosso");
 
 
 
 
 // creo l'array di prodotti
 
-$products = [
+$foods = [
     new Food ("Crocchette", 20, $categoryAnimals_dog, "Manzo"),
     new Food ("Biscotti", 10, $categoryAnimals_dog, "Pollo"),
     new Food ("Barf", 20, $categoryAnimals_cat, "Manzo"),
+    new Food ("Carne", 20, $categoryAnimals_dog, "Pollo"),
+
 ];
 
 
 $toys = [
     new Toy ("Palla", 15, $categoryAnimals_cat, "Plastica", "Grande"),
-    new Toy ("Osso", 15, $categoryAnimals_dog, "Plastica", "Grande"),
+    new Toy ("Osso", 15, $categoryAnimals_dog, "Gomma", "Grande"),
+    new Toy ("Pupazzo", 15, $categoryAnimals_dog, "Stoffa", "Piccolo"),
+    new Toy ("Pollo", 15, $categoryAnimals_dog, "Plastica", "Piccolo"),
+
+
 ];
 
 $accessoryes = [
     new Accessory("Collare per Cani", 25, $categoryAnimals_dog, "Rosso"),
     new Accessory("Spazzola", 25, $categoryAnimals_cat, "Grey"),
+    new Accessory("Gunzaglio", 25, $categoryAnimals_cat, "Grey"),
+    new Accessory("Ciondolo", 25, $categoryAnimals_cat, "Grey"),
 
 ];
 
