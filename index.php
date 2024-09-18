@@ -4,7 +4,7 @@ class Animals {
     public $name;
 
     // definisco il costrutto per la classe Animals
-    public function __construct($name) {
+    public function __construct($_name) {
         $this->name = $_name;
     }
 }
@@ -15,16 +15,27 @@ class Product {
     public $title;
     public $price;
     public $category;
-    public $type;
 
     // definisco il costrutto per la classe Product
-    public function __construct($title, $price, $category, $type) {
+    public function __construct($_title, $_price, $_category) {
         $this->title = $_title;
         $this->price = $_price;
         $this->category = $_category;
-        $this->type = $_type;
 
     }
+}
+
+// Ereditarietà che estende la classe prodotto
+class Food extends Product {
+    public $flavor;
+
+    // definisco il costruttore della classe food
+    public function __construct($_title, $_price, $_category, $_flavor) {
+        
+    }
+    
+
+
 }
 
 ?>
