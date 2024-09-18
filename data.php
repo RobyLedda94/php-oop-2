@@ -15,14 +15,6 @@ $categoryAnimals_cat = new Animals ("Cat");
 
 
 
-
-// $typeOfFood = new Food ("Cibo per Cani", 20, $categoryAnimals_dog, "Manzo");
-// $dogToy = new Toy ("Giocattolo per cani,", 15, $categoryAnimals_cat, "Plastica", "Grande");
-// $dogAccessory = new Accessory("Collare per Cani", 25, $categoryAnimals_dog, "Rosso");
-
-
-
-
 // creo l'array di prodotti
 
 $foods = [
