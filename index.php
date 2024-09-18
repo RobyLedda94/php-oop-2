@@ -31,11 +31,20 @@ class Food extends Product {
 
     // definisco il costruttore della classe food
     public function __construct($_title, $_price, $_category, $_flavor) {
-        
-    }
-    
-
-
+        $this->title = $_title;
+        $this->price = $_price;
+        $this->category = $_category;
+        $this ->flavor = $_flavor;
+    }   
 }
+
+// creo le istanze 
+
+$categoryAnimals = new Animals ("Dog");
+$typeOfFood = new Food ("Cibo per Cani", 20, $categoryAnimals, "Manzo");
+
+var_dump($categoryAnimals);
+var_dump($typeOfFood);
+
 
 ?>
