@@ -21,6 +21,8 @@ $dogToy = new Toy ("Giocattolo per cani,", 15, $categoryAnimals_cat, "Plastica",
 $dogAccessory = new Accessory("Collare per Cani", 25, $categoryAnimals_dog, "Rosso");
 
 
+
+
 // creo l'array di prodotti
 
 $products = [
