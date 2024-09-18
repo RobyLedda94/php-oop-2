@@ -9,4 +9,22 @@ class Animals {
     }
 }
 
+
+// definisco la classe per i prodotti 
+class Product {
+    public $title;
+    public $price;
+    public $category;
+    public $type;
+
+    // definisco il costrutto per la classe Product
+    public function __construct($title, $price, $category, $type) {
+        $this->title = $_title;
+        $this->price = $_price;
+        $this->category = $_category;
+        $this->type = $_type;
+
+    }
+}
+
 ?>
