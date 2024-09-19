@@ -39,7 +39,7 @@ $accessoryes = [
     new Accessory("Collare per Cani", 25, $categoryAnimals_dog, "Rosso"),
     new Accessory("Spazzola", 25, $categoryAnimals_cat, "Grey"),
     new Accessory("Gunzaglio", 25, $categoryAnimals_cat, "Grey"),
-    new Accessory("Ciondolo", 25, $categoryAnimals_cat, "Grey"),
+    new Accessory("Ciondolo", 25, $categoryAnimals_cat, "Nero"),
 
 ];
 
